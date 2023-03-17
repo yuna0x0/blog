@@ -128,10 +128,10 @@ serverName = "cactus.chat"
 siteName = ""
 
 [comments.giscus]
-repo = "edisonlee55/blog-comment"
-repoID = "R_kgDOJKToEA"
+repo = "edisonlee55/blog"
+repoID = "R_kgDOJKoXaw"
 category = "Announcements"
-categoryID = "DIC_kwDOJKToEM4CU6YY"
+categoryID = "DIC_kwDOJKoXa84CU7aa"
 mapping = "pathname"
 lightTheme = ""
 darkTheme = ""
