@@ -1,7 +1,7 @@
 ---
 title: Example Category
 description: A description of this category
-image: img/97609035_p0.jpg
+image: img/97609035_p0.webp
 
 # Badge style
 style:

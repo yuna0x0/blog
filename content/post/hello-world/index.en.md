@@ -3,7 +3,7 @@ title: Test Article
 description: Nya Hello~ This is a test article!
 slug: hello-world
 date: 2023-03-16 00:00:00+0000
-image: img/83061392_p0.png
+image: img/83061392_p0.webp
 categories:
     - Example Category
 tags:
@@ -29,6 +29,6 @@ This is test, 1234.
 
 > This is a quote!
 
-![Image Test](img/69660140_p0.jpg)
+![Image Test](img/69660140_p0.webp)
 
 {{< youtube 2b1IexhKPz4 >}}
