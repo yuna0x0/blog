@@ -14,9 +14,9 @@ tags:
 
 ---
 
-osu!lazer 比賽模式 (Tournament Mode) 為現在 osu! World Cup (OWC) 官方直播所使用的客戶端，並透過 IPC 方式和 osu!tourney (osu! 比賽模式) 進行資料連結 (例如: 分數、比賽房間聊天室等...)。
+osu!lazer 比賽模式 (Tournament Mode) 為現在 osu! World Cup (OWC) 官方直播所使用的客戶端，並透過 [IPC](https://zh.wikipedia.org/wiki/行程間通訊) 方式和 [osu!tourney (osu! 比賽模式)](https://osu.ppy.sh/help/wiki/osu!tourney) 進行資料連結 (例如: 分數、比賽房間聊天室等...)。
 
-同時也可配合使用第三方比賽房間管理軟體 Script chan (又稱為 osu!tournament)  管理房間。
+同時也可配合使用第三方比賽房間管理軟體 [Script chan (又稱為 osu!tournament)](https://git.cartooncraft.fr/shARPII/script-chan/wikis/About-us/Home)  管理房間。
 
 先決條件:
 - 已安裝 osu! (Cutting Edge 版本)，並登入帳號 (去官網下載，就是平常在用的 osu! 客戶端，然後進遊戲切換版本即可)
