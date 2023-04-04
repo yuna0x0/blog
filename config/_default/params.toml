@@ -27,7 +27,7 @@ math = false
 readingTime = true
 
 [article.license]
-enabled = false
+enabled = true
 default = "Licensed under CC BY-NC-SA 4.0"
 
 ## Widgets

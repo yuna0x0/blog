@@ -1,13 +1,15 @@
 ---
-title: 測試文章
-description: 喵哈囉，這是一篇測試文章！
+title: Hello World!
+description: 喵哈囉，部落格的第一篇文章！
 slug: hello-world
 date: 2023-03-16 00:00:00+0000
 image: img/83061392_p0.webp
 categories:
-    - Example Category
-tags:
-    - Example Tag
+    - misc
+---
+
+一些部落格功能的小測試 >w<
+
 ---
 
 在 Unity C# 印出 `Hello World!`：

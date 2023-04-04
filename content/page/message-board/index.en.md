@@ -2,9 +2,10 @@
 title: Message Board
 slug: message-board
 readingTime: false
+license: false
 menu:
     main: 
-        weight: 5
+        weight: 6
         params:
             icon: messages
 ---

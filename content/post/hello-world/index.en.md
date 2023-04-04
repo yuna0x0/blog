@@ -1,13 +1,15 @@
 ---
-title: Test Article
-description: Nya Hello~ This is a test article!
+title: Hello World!
+description: Nya Hello~ The first article of this blog!
 slug: hello-world
 date: 2023-03-16 00:00:00+0000
 image: img/83061392_p0.webp
 categories:
-    - Example Category
-tags:
-    - Example Tag
+    - misc
+---
+
+Testing out some blog features. >w<
+
 ---
 
 Print `Hello World!` in Unity C#:
