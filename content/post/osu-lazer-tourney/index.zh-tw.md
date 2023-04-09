@@ -102,9 +102,9 @@ osu!lazer 比賽模式 (Tournament Mode) 為現在 osu! World Cup (OWC) 官方�
 - Best of: 賽制數量
 - Add beatmap: 新增圖譜到圖池
 - Beatmap ID: 圖譜 ID  
-(像是圖譜 https://osu.ppy.sh/beatmapsets/813454#osu/1706017 的 ID 就是 1706017，取最後的數字)
+(像是圖譜 https://osu.ppy.sh/beatmapsets/813454#osu/1706017 的 ID 就是 `1706017`，取最後的數字)
 - Mods: 使用的 Mods  
-(需自行於 `C:\Users\<用戶名稱>\AppData\Roaming\osu` 中建立 mods 資料夾，並將各個 mods 的圖案放到該資料夾當中，最後在這邊輸入檔案名稱即可 (不需副檔名)，檔名可自取。圖案可以直接用 skin 當中的 mods 圖案，也可以自行設計)
+(需自行於 `C:\Users\<用戶名稱>\AppData\Roaming\osu` 中建立 `mods` 資料夾，並將各個 mods 的圖案放到該資料夾當中，最後在這邊輸入檔案名稱即可 (不需副檔名)，檔名可自取。圖案可以直接用 skin 當中的 mods 圖案，也可以自行設計)
 - Delete Beatmap: 將該圖譜從圖池刪除
 - Delete Round: 刪除該回合
 
