@@ -2,36 +2,31 @@
 title: 連結
 slug: links
 links:
-  - title: GitHub
-    description: GitHub is the world's largest software development platform.
-    website: https://github.com
-    image: https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png
+  - title: Leko 發牢騷
+    description: 可愛雷雷的部落格
+    website: https://blog.leko.moe
+    image: https://leko.moe/avatar.webp
+  - title: kolu (C4) - Twitter
+    description: C4 佬師的 Twitter
+    website: https://twitter.com/c4_create
+    image: c4-avatar.webp
+  - title: 小易的部落格
+    description: 網路大神小易的部落格
+    website: https://blog.steveyi.net
+    image: https://www.gravatar.com/avatar/1ec8db9c1cd57aee84467f250353bf12.jpg
+  - title: Ching367436's blog
+    description: 先前在 AIS3 2021 一起拿下最佳專題的朋友
+    website: https://ching367436.github.io
+    image: ching367463.webp
 menu:
     main: 
         weight: 5
         params:
             icon: link
 
+readingTime: false
 comments: false
 license: false
 ---
 
-> WIP
-
-To use this feature, add `links` section to frontmatter.
-
-This page's frontmatter:
-
-```yaml
-links:
-  - title: GitHub
-    description: GitHub is the world's largest software development platform.
-    website: https://github.com
-    image: https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png
-  - title: TypeScript
-    description: TypeScript is a typed superset of JavaScript that compiles to plain JavaScript.
-    website: https://www.typescriptlang.org
-    image: ts-logo-128.jpg
-```
-
-`image` field accepts both local and external images.
+謙謙貓貓朋友們的超酷 Blog 和相關連結！
