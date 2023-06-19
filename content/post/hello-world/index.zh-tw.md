@@ -2,7 +2,7 @@
 title: Hello World!
 description: 喵哈囉，部落格的第一篇文章！
 slug: hello-world
-date: 2023-03-16 00:00:00+0000
+date: 2023-03-16 00:00:00+0800
 image: img/83061392_p0.webp
 categories:
     - misc

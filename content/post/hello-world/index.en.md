@@ -2,7 +2,7 @@
 title: Hello World!
 description: Nya Hello~ The first article of this blog!
 slug: hello-world
-date: 2023-03-16 00:00:00+0000
+date: 2023-03-16 00:00:00+0800
 image: img/83061392_p0.webp
 categories:
     - misc

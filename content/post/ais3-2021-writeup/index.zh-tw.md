@@ -2,7 +2,7 @@
 title: AIS3 2021 | Pre-exam write-up
 description: 之前參加 AIS3 2021 (資安暑期課程) 的 Pre-exam write-up
 slug: ais3-2021-writeup
-date: 2021-05-25 00:00:00+0000
+date: 2021-05-25 00:00:00+0800
 categories:
     - misc
 tags:

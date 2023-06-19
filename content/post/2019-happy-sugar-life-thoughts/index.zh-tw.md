@@ -2,7 +2,7 @@
 title: Happy Sugar Life 讀後心得
 description: 家庭價值觀的偏差導致現代社會的三種問題
 slug: 2019-happy-sugar-life-thoughts
-date: 2019-10-15 00:00:00+0000
+date: 2019-10-15 00:00:00+0800
 image: satou-and-shio.webp
 categories:
     - thoughts

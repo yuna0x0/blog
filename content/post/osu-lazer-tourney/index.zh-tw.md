@@ -2,7 +2,7 @@
 title: osu!lazer 比賽模式客戶端 使用教學
 description: 給想要舉辦 osu! 比賽的相關工作人員 (=ﾟωﾟ)ﾉ
 slug: osu-lazer-tourney
-date: 2019-12-04 00:00:00+0000
+date: 2019-12-04 00:00:00+0800
 categories:
     - tutorial
 tags:
