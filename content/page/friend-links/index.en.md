@@ -17,7 +17,7 @@ links:
   - title: Ching367436's blog
     description: 先前在 AIS3 2021 一起拿下最佳專題的朋友
     website: https://ching367436.github.io
-    image: https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png
+    image: ching367463.webp
 menu:
     main: 
         weight: 5
