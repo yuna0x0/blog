@@ -1,6 +1,6 @@
 ---
-title: Links
-slug: links
+title: Friend Links
+slug: friend-links
 links:
   - title: Leko 發牢騷
     description: 可愛雷雷的部落格
@@ -22,7 +22,7 @@ menu:
     main: 
         weight: 5
         params:
-            icon: link
+            icon: heart
 
 readingTime: false
 comments: false
