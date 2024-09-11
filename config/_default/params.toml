@@ -14,12 +14,12 @@ lastUpdated = "Jan 02, 2006 15:04 MST"
 
 [sidebar]
 emoji = "🍥"
-subtitle = "謙謙貓貓的可愛部落格 (๑╹ω╹๑ )"
+subtitle = "Yuna 貓貓的可愛部落格 (๑╹ω╹๑ )"
 
 [sidebar.avatar]
 enabled = true
 local = false
-src = "https://cdn.edisonlee55.com/edisonlee55/avatar.webp"
+src = "https://cdn.yuna0x0.com/edisonlee55/avatar.webp"
 
 [article]
 math = false
@@ -127,7 +127,7 @@ serverName = "cactus.chat"
 siteName = ""
 
 [comments.giscus]
-repo = "edisonlee55/blog"
+repo = "yuna0x0/blog"
 repoID = "R_kgDOJKoXaw"
 category = "Comments"
 categoryID = "DIC_kwDOJKoXa84CU7ag"
