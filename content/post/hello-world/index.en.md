@@ -31,6 +31,6 @@ This is test, 1234.
 
 > This is a quote!
 
-![Image Test](img/69660140_p0.webp)
+![Image Test](69660140_p0.webp)
 
 {{< youtube 2b1IexhKPz4 >}}

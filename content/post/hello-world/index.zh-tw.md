@@ -31,6 +31,6 @@ public class HelloWorld : MonoBehaviour
 
 > 這是引用！
 
-![圖片測試](img/69660140_p0.webp)
+![圖片測試](69660140_p0.webp)
 
 {{< youtube 2b1IexhKPz4 >}}
