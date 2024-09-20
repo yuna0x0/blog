@@ -5,8 +5,8 @@ languagedirection = "ltr"
 title = "yuna0x0's Blog"
 weight = 1
 
-[en]
-languageName = "English"
-languagedirection = "ltr"
-title = "yuna0x0's Blog"
-weight = 2
+# [en]
+# languageName = "English"
+# languagedirection = "ltr"
+# title = "yuna0x0's Blog"
+# weight = 2
