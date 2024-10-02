@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Osu! on yuna0x0's Blog</title><link>https://blog.yuna0x0.com/tags/osu/</link><description>Recent content in Osu! on yuna0x0's Blog</description><generator>Hugo -- gohugo.io</generator><language>zh-tw</language><lastBuildDate>Wed, 04 Dec 2019 00:00:00 +0800</lastBuildDate><atom:link href="https://blog.yuna0x0.com/tags/osu/index.xml" rel="self" type="application/rss+xml"/><item><title>osu!lazer 比賽模式客戶端 使用教學</title><link>https://blog.yuna0x0.com/p/2019-12-04-osu-lazer-tourney/</link><pubDate>Wed, 04 Dec 2019 00:00:00 +0800</pubDate><guid>https://blog.yuna0x0.com/p/2019-12-04-osu-lazer-tourney/</guid><description>&lt;p>文章遷移前的發佈網址 (巴哈姆特): &lt;a class="link" href="https://forum.gamer.com.tw/C.php?bsn=18601&amp;amp;snA=7758" target="_blank" rel="noopener"
+>https://forum.gamer.com.tw/C.php?bsn=18601&amp;snA=7758&lt;/a>&lt;/p>
+&lt;hr>
+&lt;p>osu!lazer 比賽模式 (Tournament Mode) 為現在 osu! World Cup (OWC) 官方直播所使用的客戶端，並透過 &lt;a class="link" href="https://zh.wikipedia.org/wiki/%e8%a1%8c%e7%a8%8b%e9%96%93%e9%80%9a%e8%a8%8a" target="_blank" rel="noopener"
+>IPC&lt;/a> 方式和 &lt;a class="link" href="https://osu.ppy.sh/help/wiki/osu!tourney" target="_blank" rel="noopener"
+>osu!tourney (osu! 比賽模式)&lt;/a> 進行資料連結 (例如: 分數、比賽房間聊天室等&amp;hellip;)。&lt;/p>
+&lt;p>同時也可配合使用第三方比賽房間管理軟體 &lt;a class="link" href="https://git.cartooncraft.fr/shARPII/script-chan/wikis/About-us/Home" target="_blank" rel="noopener"
+>Script chan (又稱為 osu!tournament)&lt;/a> 管理房間。&lt;/p>
+&lt;p>先決條件:&lt;/p>
+&lt;ul>
+&lt;li>已安裝 osu! (Cutting Edge 版本)，並登入帳號 (去官網下載，就是平常在用的 osu! 客戶端，然後進遊戲切換版本即可)&lt;/li>
+&lt;li>已安裝 osu!lazer，並登入帳號 (去這裡下載: &lt;a class="link" href="https://github.com/ppy/osu/releases" target="_blank" rel="noopener"
+>https://github.com/ppy/osu/releases&lt;/a>)&lt;/li>
+&lt;li>擁有 osu!supporter tag (才能啟動 osu!tourney)&lt;/li>
+&lt;/ul>
+&lt;h2 id="如何進入-osulazer-比賽模式客戶端">如何進入 osu!lazer 比賽模式客戶端
+&lt;/h2>&lt;p>步驟:&lt;/p>
+&lt;ol>
+&lt;li>在桌面的 osu!lazer 捷徑上按右鍵，點「內容」&lt;/li>
+&lt;/ol>
+&lt;p>&lt;img src="https://blog.yuna0x0.com/p/2019-12-04-osu-lazer-tourney/enter-client-1.png"
+width="300"
+height="477"
+srcset="https://blog.yuna0x0.com/p/2019-12-04-osu-lazer-tourney/enter-client-1_hu12476243116440003122.png 480w, https://blog.yuna0x0.com/p/2019-12-04-osu-lazer-tourney/enter-client-1_hu533183286449847033.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="62"
+data-flex-basis="150px"
+>&lt;/p>
+&lt;ol start="2">
+&lt;li>在目標的最後面加入 &lt;code>--tournament&lt;/code>，並按確定&lt;/li>
+&lt;/ol>
+&lt;p>&lt;img src="https://blog.yuna0x0.com/p/2019-12-04-osu-lazer-tourney/enter-client-2.png"
+width="400"
+height="551"
+srcset="https://blog.yuna0x0.com/p/2019-12-04-osu-lazer-tourney/enter-client-2_hu17792648418376396240.png 480w, https://blog.yuna0x0.com/p/2019-12-04-osu-lazer-tourney/enter-client-2_hu11547848762818129213.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="72"
+data-flex-basis="174px"
+>&lt;/p>
+&lt;ol start="3">
+&lt;li>
+&lt;p>點兩下 osu!lazer 的捷徑&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>會看到這樣的介面，代表已經進入 osu!lazer 比賽模式&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;p>&lt;img src="https://blog.yuna0x0.com/p/2019-12-04-osu-lazer-tourney/enter-client-3.jfif"
+width="1920"
+height="803"
+srcset="https://blog.yuna0x0.com/p/2019-12-04-osu-lazer-tourney/enter-client-3_hu7449590757433765754.jfif 480w, https://blog.yuna0x0.com/p/2019-12-04-osu-lazer-tourney/enter-client-3_hu11985885374591128422.jfif 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="239"
+data-flex-basis="573px"
+>&lt;/p>
+&lt;h2 id="osutourney-及-ipc-設定">osu!tourney 及 IPC 設定
+&lt;/h2>&lt;p>&lt;strong>打開 osu!lazer 比賽模式之後還要打開 osu!tourney 並設定 IPC 才能做資料連結，以下是 osu!tourney 的設定方式&lt;/strong>&lt;/p>
+&lt;ol>
+&lt;li>打開 osu!，然後將版本換成 Cutting Edge (好像翻作最新版&amp;hellip;)，然後重啟並更新&lt;/li>
+&lt;/ol>
+&lt;p>&lt;img src="https://blog.yuna0x0.com/p/2019-12-04-osu-lazer-tourney/tourney-ipc-1.jfif"
+width="1920"
+height="1200"
+srcset="https://blog.yuna0x0.com/p/2019-12-04-osu-lazer-tourney/tourney-ipc-1_hu7029498435187981092.jfif 480w, https://blog.yuna0x0.com/p/2019-12-04-osu-lazer-tourney/tourney-ipc-1_hu12337750405404588087.jfif 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="160"
+data-flex-basis="384px"
+>&lt;/p>
+&lt;ol start="2">
+&lt;li>
+&lt;p>接著退出遊戲，到 osu! 的安裝資料夾 (如果沒有特別更改，通常在 &lt;code>C:\Users\&amp;lt;用戶名稱&amp;gt;\AppData\Local\osu!&lt;/code>)&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>新增 &lt;code>ipc.txt&lt;/code> 和 &lt;code>tournament.cfg&lt;/code> 這兩個空白文件 (副檔名請注意，可以打開副檔名檢視直接改副檔名比較快)&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;p>&lt;img src="https://blog.yuna0x0.com/p/2019-12-04-osu-lazer-tourney/tourney-ipc-2.jfif"
+width="1920"
+height="1015"
+srcset="https://blog.yuna0x0.com/p/2019-12-04-osu-lazer-tourney/tourney-ipc-2_hu14700307900296259525.jfif 480w, https://blog.yuna0x0.com/p/2019-12-04-osu-lazer-tourney/tourney-ipc-2_hu18395798613472011184.jfif 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="189"
+data-flex-basis="453px"
+>&lt;/p>
+&lt;ol start="4">
+&lt;li>打開 osu! 後就會進入 osu!tourney 比賽模式，然後就會看到類似這樣的介面 (其餘設定可參照 osu! 官方文件: &lt;a class="link" href="https://osu.ppy.sh/help/wiki/osu%21tourney" target="_blank" rel="noopener"
+>https://osu.ppy.sh/help/wiki/osu%21tourney&lt;/a>)&lt;/li>
+&lt;/ol>
+&lt;p>&lt;img src="https://blog.yuna0x0.com/p/2019-12-04-osu-lazer-tourney/tourney-ipc-3.jfif"
+width="1280"
+height="919"
+srcset="https://blog.yuna0x0.com/p/2019-12-04-osu-lazer-tourney/tourney-ipc-3_hu6204552909068794594.jfif 480w, https://blog.yuna0x0.com/p/2019-12-04-osu-lazer-tourney/tourney-ipc-3_hu3880608342137900839.jfif 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="139"
+data-flex-basis="334px"
+>&lt;/p>
+&lt;h2 id="osulazer-比賽模式概略介紹">osu!lazer 比賽模式概略介紹
+&lt;/h2>&lt;h3 id="setup-設定">Setup (設定)
+&lt;/h3>&lt;p>有這些設定:&lt;/p>
+&lt;ul>
+&lt;li>IPC 連接確認 (如果顯示 Not Found，請檢查第二部分是否操作正確)&lt;/li>
+&lt;li>osu! 帳號登入 (如果還沒登入請按 Change Login 登入，需要 osu! 帳號才能正確獲得圖譜等資料)&lt;/li>
+&lt;li>模式選擇&lt;/li>
+&lt;/ul>
+&lt;p>&lt;img src="https://blog.yuna0x0.com/p/2019-12-04-osu-lazer-tourney/tourney-mode-1.jfif"
+width="1920"
+height="803"
+srcset="https://blog.yuna0x0.com/p/2019-12-04-osu-lazer-tourney/tourney-mode-1_hu7449590757433765754.jfif 480w, https://blog.yuna0x0.com/p/2019-12-04-osu-lazer-tourney/tourney-mode-1_hu11985885374591128422.jfif 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="239"
+data-flex-basis="573px"
+>&lt;/p>
+&lt;h3 id="team-editor-隊伍編輯器">Team Editor (隊伍編輯器)
+&lt;/h3>&lt;p>主要用來整理隊伍跟成員。&lt;/p>
+&lt;p>右邊的 Control Panel:&lt;/p>
+&lt;ul>
+&lt;li>Add new: 新增隊伍&lt;/li>
+&lt;li>Clear all: 刪除全部隊伍&lt;/li>
+&lt;li>Add all countries: 把全部國家的名稱當成隊名都加進去&lt;/li>
+&lt;/ul>
+&lt;p>中間的隊伍:&lt;/p>
+&lt;ul>
+&lt;li>Name: 隊伍全名&lt;/li>
+&lt;li>Acronym: 隊伍縮寫 (會顯示在後面的賽程表和天梯圖)&lt;/li>
+&lt;li>Flag: 隊伍國旗 (用國家代號)&lt;/li>
+&lt;li>Add player: 新增玩家的 ID 到隊伍&lt;/li>
+&lt;li>Delete Team: 刪除該隊伍&lt;/li>
+&lt;/ul>
+&lt;p>&lt;img src="https://blog.yuna0x0.com/p/2019-12-04-osu-lazer-tourney/tourney-mode-2.jfif"
+width="1920"
+height="862"
+srcset="https://blog.yuna0x0.com/p/2019-12-04-osu-lazer-tourney/tourney-mode-2_hu17469449177281190878.jfif 480w, https://blog.yuna0x0.com/p/2019-12-04-osu-lazer-tourney/tourney-mode-2_hu115724069665547674.jfif 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="222"
+data-flex-basis="534px"
+>&lt;/p>
+&lt;h3 id="rounds-editor-回合編輯器">Rounds Editor (回合編輯器)
+&lt;/h3>&lt;p>用來整理回合和圖池。&lt;/p>
+&lt;p>右邊的 Control Panel:&lt;/p>
+&lt;ul>
+&lt;li>Add new: 新增回合&lt;/li>
+&lt;li>Clear all: 刪除全部回合&lt;/li>
+&lt;/ul>
+&lt;p>中間的回合:&lt;/p>
+&lt;ul>
+&lt;li>Name: 回合名&lt;/li>
+&lt;li>Description: 回合解釋&lt;/li>
+&lt;li>Start Time: 該回合的開始時間&lt;/li>
+&lt;li>Best of: 賽制數量&lt;/li>
+&lt;li>Add beatmap: 新增圖譜到圖池&lt;/li>
+&lt;li>Beatmap ID: 圖譜 ID&lt;br>
+(像是圖譜 &lt;a class="link" href="https://osu.ppy.sh/beatmapsets/813454#osu/1706017" target="_blank" rel="noopener"
+>https://osu.ppy.sh/beatmapsets/813454#osu/1706017&lt;/a> 的 ID 就是 &lt;code>1706017&lt;/code>，取最後的數字)&lt;/li>
+&lt;li>Mods: 使用的 Mods&lt;br>
+(需自行於 &lt;code>C:\Users\&amp;lt;用戶名稱&amp;gt;\AppData\Roaming\osu&lt;/code> 中建立 &lt;code>mods&lt;/code> 資料夾，並將各個 mods 的圖案放到該資料夾當中，最後在這邊輸入檔案名稱即可 (不需副檔名)，檔名可自取。圖案可以直接用 skin 當中的 mods 圖案，也可以自行設計)&lt;/li>
+&lt;li>Delete Beatmap: 將該圖譜從圖池刪除&lt;/li>
+&lt;li>Delete Round: 刪除該回合&lt;/li>
+&lt;/ul>
+&lt;p>&lt;img src="https://blog.yuna0x0.com/p/2019-12-04-osu-lazer-tourney/tourney-mode-3.jfif"
+width="1920"
+height="863"
+srcset="https://blog.yuna0x0.com/p/2019-12-04-osu-lazer-tourney/tourney-mode-3_hu3833533348292306194.jfif 480w, https://blog.yuna0x0.com/p/2019-12-04-osu-lazer-tourney/tourney-mode-3_hu9862911554197929222.jfif 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="222"
+data-flex-basis="533px"
+>&lt;/p>
+&lt;h3 id="bracket-editor-賽程天梯編輯器">Bracket Editor (賽程天梯編輯器)
+&lt;/h3>&lt;p>用來整理賽程比分的天梯圖，在空白處按右鍵來新增對戰，在對戰上按右鍵來設定目前進行中的對戰並連結其他對戰。&lt;/p>
+&lt;p>右邊的 Ladder:&lt;/p>
+&lt;ul>
+&lt;li>Team 1: 該對戰的隊伍 1&lt;/li>
+&lt;li>Team 2: 該對戰的隊伍 2&lt;/li>
+&lt;li>Round: 該對戰是屬於哪個回合 (和剛剛在 Rounds Editor 中所設定的做對應)&lt;/li>
+&lt;li>Losers Bracket: 該對戰是否為敗部賽&lt;/li>
+&lt;li>Match Time: 對戰進行的時間&lt;/li>
+&lt;/ul>
+&lt;p>&lt;img src="https://blog.yuna0x0.com/p/2019-12-04-osu-lazer-tourney/tourney-mode-4.jfif"
+width="1920"
+height="861"
+srcset="https://blog.yuna0x0.com/p/2019-12-04-osu-lazer-tourney/tourney-mode-4_hu13332601983774880609.jfif 480w, https://blog.yuna0x0.com/p/2019-12-04-osu-lazer-tourney/tourney-mode-4_hu10889516954630104330.jfif 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="222"
+data-flex-basis="535px"
+>&lt;/p>
+&lt;h3 id="schedule-自動生成的賽程表">Schedule (自動生成的賽程表)
+&lt;/h3>&lt;p>從上面設定好的資料中自動生成的賽程表，可用於 OBS 直播。&lt;/p>
+&lt;p>&lt;img src="https://blog.yuna0x0.com/p/2019-12-04-osu-lazer-tourney/tourney-mode-5.jfif"
+width="1920"
+height="863"
+srcset="https://blog.yuna0x0.com/p/2019-12-04-osu-lazer-tourney/tourney-mode-5_hu606868735506332239.jfif 480w, https://blog.yuna0x0.com/p/2019-12-04-osu-lazer-tourney/tourney-mode-5_hu12601163000970470992.jfif 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="222"
+data-flex-basis="533px"
+>&lt;/p>
+&lt;h3 id="bracket-賽程天梯圖">Bracket (賽程天梯圖)
+&lt;/h3>&lt;p>從賽程天梯編輯器設定好的天梯圖，可用於 OBS 直播，並在上面編輯比分。&lt;/p>
+&lt;p>&lt;img src="https://blog.yuna0x0.com/p/2019-12-04-osu-lazer-tourney/tourney-mode-6.jfif"
+width="1920"
+height="865"
+srcset="https://blog.yuna0x0.com/p/2019-12-04-osu-lazer-tourney/tourney-mode-6_hu9168219246811644770.jfif 480w, https://blog.yuna0x0.com/p/2019-12-04-osu-lazer-tourney/tourney-mode-6_hu15489669792373445357.jfif 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="221"
+data-flex-basis="532px"
+>&lt;/p>
+&lt;h3 id="teamintro-比賽開始前的隊伍介紹">TeamIntro (比賽開始前的隊伍介紹)
+&lt;/h3>&lt;p>從上面設定好的資料中自動生成的隊伍介紹圖，可用於 OBS 直播。&lt;/p>
+&lt;p>&lt;img src="https://blog.yuna0x0.com/p/2019-12-04-osu-lazer-tourney/tourney-mode-7.jfif"
+width="1920"
+height="863"
+srcset="https://blog.yuna0x0.com/p/2019-12-04-osu-lazer-tourney/tourney-mode-7_hu18277624368950907152.jfif 480w, https://blog.yuna0x0.com/p/2019-12-04-osu-lazer-tourney/tourney-mode-7_hu16353067819213876963.jfif 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="222"
+data-flex-basis="533px"
+>&lt;/p>
+&lt;h3 id="mappool-圖池">MapPool (圖池)
+&lt;/h3>&lt;p>從上面設定好的資料中自動生成的圖池，可用於 OBS 直播，並做 Pick/Ban 圖的功能，下面同時同步比賽房間聊天室內容。&lt;/p>
+&lt;p>&lt;img src="https://blog.yuna0x0.com/p/2019-12-04-osu-lazer-tourney/tourney-mode-8.jfif"
+width="1920"
+height="863"
+srcset="https://blog.yuna0x0.com/p/2019-12-04-osu-lazer-tourney/tourney-mode-8_hu5762283971973958012.jfif 480w, https://blog.yuna0x0.com/p/2019-12-04-osu-lazer-tourney/tourney-mode-8_hu11002503980130000444.jfif 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="222"
+data-flex-basis="533px"
+>&lt;/p>
+&lt;h3 id="gameplay-比賽時遊戲介面">Gameplay (比賽時遊戲介面)
+&lt;/h3>&lt;p>以 IPC 和 osu!tourney 即時同步分數和目前圖譜，擁有綠布幕可將本介面和 osu!tourney 的畫面合成到 OBS 直播中，下面同時同步比賽房間聊天室內容。&lt;/p>
+&lt;p>右邊的 Control Panel:&lt;/p>
+&lt;ul>
+&lt;li>Toggle warmup: 熱身賽開關&lt;/li>
+&lt;li>Toggle chat: 比賽房間聊天室開關&lt;/li>
+&lt;/ul>
+&lt;p>&lt;img src="https://blog.yuna0x0.com/p/2019-12-04-osu-lazer-tourney/tourney-mode-9.jfif"
+width="1920"
+height="862"
+srcset="https://blog.yuna0x0.com/p/2019-12-04-osu-lazer-tourney/tourney-mode-9_hu3489160377401815485.jfif 480w, https://blog.yuna0x0.com/p/2019-12-04-osu-lazer-tourney/tourney-mode-9_hu7723015653546265425.jfif 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="222"
+data-flex-basis="534px"
+>&lt;/p>
+&lt;h3 id="win-該回勝利的隊伍圖">Win (該回勝利的隊伍圖)
+&lt;/h3>&lt;h3 id="drawings-抽籤介面">Drawings (抽籤介面)
+&lt;/h3>&lt;p>osu!Lazer Drawing 抽籤系統。&lt;/p>
+&lt;p>須先設定，可參照 osu! 官方文件: &lt;a class="link" href="https://osu.ppy.sh/help/wiki/Tournament_Drawings" target="_blank" rel="noopener"
+>https://osu.ppy.sh/help/wiki/Tournament_Drawings&lt;/a>&lt;/p>
+&lt;p>&lt;img src="https://blog.yuna0x0.com/p/2019-12-04-osu-lazer-tourney/tourney-mode-10.jfif"
+width="1910"
+height="986"
+srcset="https://blog.yuna0x0.com/p/2019-12-04-osu-lazer-tourney/tourney-mode-10_hu9672135227190745802.jfif 480w, https://blog.yuna0x0.com/p/2019-12-04-osu-lazer-tourney/tourney-mode-10_hu7838501353186318227.jfif 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="193"
+data-flex-basis="464px"
+>&lt;/p>
+&lt;h3 id="showcase-圖譜詳細資料顯示">Showcase (圖譜詳細資料顯示)
+&lt;/h3>&lt;p>顯示圖譜的詳細資料，可自行於 OBS 中合成其他物件。&lt;/p>
+&lt;p>&lt;img src="https://blog.yuna0x0.com/p/2019-12-04-osu-lazer-tourney/tourney-mode-11.jfif"
+width="1920"
+height="862"
+srcset="https://blog.yuna0x0.com/p/2019-12-04-osu-lazer-tourney/tourney-mode-11_hu8556990228627755648.jfif 480w, https://blog.yuna0x0.com/p/2019-12-04-osu-lazer-tourney/tourney-mode-11_hu13787306010967865354.jfif 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="222"
+data-flex-basis="534px"
+>&lt;/p></description></item></channel></rss>

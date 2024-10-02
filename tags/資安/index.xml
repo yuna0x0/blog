@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>資安 on yuna0x0's Blog</title><link>https://blog.yuna0x0.com/tags/%E8%B3%87%E5%AE%89/</link><description>Recent content in 資安 on yuna0x0's Blog</description><generator>Hugo -- gohugo.io</generator><language>zh-tw</language><lastBuildDate>Tue, 25 May 2021 00:00:00 +0800</lastBuildDate><atom:link href="https://blog.yuna0x0.com/tags/%E8%B3%87%E5%AE%89/index.xml" rel="self" type="application/rss+xml"/><item><title>AIS3 2021 | Pre-exam write-up</title><link>https://blog.yuna0x0.com/p/2021-05-25-ais3-2021-writeup/</link><pubDate>Tue, 25 May 2021 00:00:00 +0800</pubDate><guid>https://blog.yuna0x0.com/p/2021-05-25-ais3-2021-writeup/</guid><description>&lt;p>題目我忘記存到哪裡了&amp;hellip; 總之就是之前紀錄的解題過程 ouo&lt;/p>
+&lt;p>隊名叫做: 白上吹雪好可愛 (小易貓貓去女裝)&lt;/p>
+&lt;p>www&lt;/p>
+&lt;hr>
+&lt;h2 id="resident-evil-village">ReSident evil villAge
+&lt;/h2>&lt;p>Forgery Attack Against RSA Digital Signature&lt;br>
+Reference (p.9): &lt;a class="link" href="http://www.ccs.neu.edu/home/riccardo/courses/csg252-fa06/lecture6.pdf" target="_blank" rel="noopener"
+>http://www.ccs.neu.edu/home/riccardo/courses/csg252-fa06/lecture6.pdf&lt;/a>&lt;/p>
+&lt;p>&amp;ldquo;Ethan Winters&amp;rdquo; → 5502769663009776377079720669811&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">Existential forgery using a known-message attack:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Suppose y = sig(x) and y’ = sig(x’)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Can check e(y y’ mod n) = x x’ mod n
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">So y y’ mod n = sig(x x’ mod n)
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>因此根據公式，先分解出兩組數字:&lt;br>
+33759323085949548325642458097 * 163 = 5502769663009776377079720669811&lt;/p>
+&lt;p>33759323085949548325642458097 → 0x6D150EBB92427FDC8E1053F1&lt;br>
+163 → 0xA3&lt;/p>
+&lt;p>將 6D150EBB92427FDC8E1053F1 和 A3 分別 sign 之後，將兩組 signature 乘起來丟進去 verify，拿到 Flag。&lt;/p>
+&lt;p>Flag: &lt;code>AIS3{R3M383R_70_HAsh_7h3_M3Ssa93_83F0r3_S19N1N9}&lt;/code>&lt;/p>
+&lt;h2 id="cat-slayer-ᶠᵃᵏᵉ--nekogoroshi">Cat Slayer ᶠᵃᵏᵉ | Nekogoroshi
+&lt;/h2>&lt;p>數字密碼暴力破解，配暮蟬 BGM 棒 (=ﾟωﾟ)ﾉ&lt;/p>
+&lt;p>密碼: 2025830455298&lt;/p>
+&lt;p>Flag: &lt;code>AIS3{H1n4m1z4w4_Sh0k0gun}&lt;/code>&lt;/p>
+&lt;h2 id="microcheese">Microcheese
+&lt;/h2>&lt;p>就&amp;hellip;程式有 bug，在剩下倒數兩顆的時候，按 0~2 以外的按鍵，就會讓 AI 方強制下棋，然後就贏惹ww&lt;/p>
+&lt;p>&lt;img src="https://blog.yuna0x0.com/p/2021-05-25-ais3-2021-writeup/microcheese.png"
+width="400"
+height="463"
+srcset="https://blog.yuna0x0.com/p/2021-05-25-ais3-2021-writeup/microcheese_hu8889281764214704761.png 480w, https://blog.yuna0x0.com/p/2021-05-25-ais3-2021-writeup/microcheese_hu1200383455364543593.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="86"
+data-flex-basis="207px"
+>&lt;/p>
+&lt;p>Flag: &lt;code>AIS3{5._e3_b5_6._a4_Bb4_7._Bd2_a5_8._axb5_Bxc3}&lt;/code>&lt;/p>
+&lt;h2 id="ⲩⲉⲧ-ⲁⲛⲟⲧⲏⲉꞅ-𝓵ⲟ𝓰ⲓⲛ-ⲣⲁ𝓰ⲉ">ⲩⲉⲧ ⲁⲛⲟⲧⲏⲉꞅ 𝓵ⲟ𝓰ⲓⲛ ⲣⲁ𝓰ⲉ
+&lt;/h2>&lt;p>Python Server Side Injection&lt;br>
+想辦法把資料塞進去然後覆蓋就對了，我試了好久總算成功 ಥ_ಥ&lt;/p>
+&lt;p>越後面的 key 值就會蓋過前面的 key 值，然後 password 如果是 null 就會被 Python 解析成 None。&lt;/p>
+&lt;p>username: &lt;code>guest&amp;quot;, &amp;quot;username&amp;quot;: &amp;quot;aaa&amp;quot;, &amp;quot;showflag&amp;quot;: true, &amp;quot;test&amp;quot;: &amp;quot;test&lt;/code>&lt;br>
+password: &lt;code>&amp;quot;, &amp;quot;password&amp;quot;: null, &amp;quot;A&amp;quot;: &amp;quot;A!&lt;/code>&lt;/p>
+&lt;p>&lt;img src="https://blog.yuna0x0.com/p/2021-05-25-ais3-2021-writeup/yet-another-login-page.png"
+width="1999"
+height="1143"
+srcset="https://blog.yuna0x0.com/p/2021-05-25-ais3-2021-writeup/yet-another-login-page_hu4709709407016125205.png 480w, https://blog.yuna0x0.com/p/2021-05-25-ais3-2021-writeup/yet-another-login-page_hu10283068149786733273.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="174"
+data-flex-basis="419px"
+>&lt;/p>
+&lt;p>Flag: &lt;code>AIS3{/r/badUIbattles?!?!}&lt;/code>&lt;/p>
+&lt;h2 id="haas">HaaS
+&lt;/h2>&lt;p>亂玩之後發現存取到 &lt;code>http://localhost&lt;/code> 會說 Don’t Attack Server，看來存取 localhost 就會拿到 flag。&lt;/p>
+&lt;p>但因為輸入 &lt;code>localhost&lt;/code>, &lt;code>127.0.0.1&lt;/code> 這類常見的會被系統擋&lt;br>
+所以得用這種奇怪的 OwO (同樣也是連到 localhost): &lt;code>http://0x7f000001&lt;/code>&lt;/p>
+&lt;p>接著把 status 換成 200 以外的就行惹。&lt;/p>
+&lt;p>&lt;img src="https://blog.yuna0x0.com/p/2021-05-25-ais3-2021-writeup/haas.png"
+width="1999"
+height="1152"
+srcset="https://blog.yuna0x0.com/p/2021-05-25-ais3-2021-writeup/haas_hu17358017285672188649.png 480w, https://blog.yuna0x0.com/p/2021-05-25-ais3-2021-writeup/haas_hu16187663455088346307.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="173"
+data-flex-basis="416px"
+>&lt;/p>
+&lt;p>Flag: &lt;code>AIS3{V3rY_v3rY_V3ry_345Y_55rF}&lt;/code>&lt;/p>
+&lt;h2 id="震撼彈-ais3-官網疑遭駭">[震撼彈] AIS3 官網疑遭駭！
+&lt;/h2>&lt;p>先觀察 pcap 檔案發現有兩組 HTTP 請求都是到 10.153.11.126&lt;/p>
+&lt;p>&lt;a class="link" href="http://magic.ais3.org/index.php?page=bHMgLg%3d" target="_blank" rel="noopener"
+>http://magic.ais3.org/index.php?page=bHMgLg%3d&lt;/a>&lt;br>
+&lt;a class="link" href="http://magic.ais3.org:8100/Index.php?page=%3DogLgMHb" target="_blank" rel="noopener"
+>http://magic.ais3.org:8100/Index.php?page=%3DogLgMHb&lt;/a>&lt;br>
+(第二組只有請求一次，所以藏在一堆請求的中間，好壞 QwQ)&lt;/p>
+&lt;p>接著繼續觀察 pcap 發現&lt;br>
+請求 quiz.ais3.org 的 DNS A record 是 10.153.11.126&lt;/p>
+&lt;p>如果直接通 quiz.ais3.org:8100 是不會通的，但卻有上面兩組 HTTP 請求&lt;br>
+所以代表 server 是看 header 的 Host 來決定通不通，把 Host 換成 magic.ais3.org 之後就通了。&lt;/p>
+&lt;p>接著觀察 index.php (小寫的) 的 query string &amp;ldquo;page&amp;rdquo;，會發現那東西一副就是要拿去解碼 Base64 (草)&lt;br>
+所以把 &lt;code>bHMgLg%3d&lt;/code> 解碼後得到 &lt;code>ls .&lt;/code>，這東西看起來則是一副系統指令的樣子。&lt;/p>
+&lt;p>然後觀察 Index.php (大寫的) 的 query string，發現就是上面小寫版的 reverse &lt;code>%3DogLgMHb&lt;/code>&lt;br>
+所以可以猜測如果要跑系統指令得先把指令變成 Base64 之後，再把它 reverse，最後放到 query string 裡面。&lt;/p>
+&lt;p>把 page query string 拿掉，會看到 PHP 丟 system 指令錯誤，發現 query string: page 可以被注入 PHP system 指令。&lt;/p>
+&lt;p>接著照上面的推論，嘗試執行 &lt;code>ls ..&lt;/code>，編碼後並反轉的字串是 &lt;code>=4iLgMHb&lt;/code>，看到了根目錄:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-gdscript3" data-lang="gdscript3">&lt;span class="line">&lt;span class="cl">&lt;span class="n">bin&lt;/span> &lt;span class="n">boot&lt;/span> &lt;span class="n">dev&lt;/span> &lt;span class="n">etc&lt;/span> &lt;span class="n">flag_c603222fc7a23ee4ae2d59c8eb2ba84d&lt;/span> &lt;span class="n">home&lt;/span> &lt;span class="n">lib&lt;/span> &lt;span class="n">lib64&lt;/span> &lt;span class="n">media&lt;/span> &lt;span class="n">mnt&lt;/span> &lt;span class="n">opt&lt;/span> &lt;span class="n">proc&lt;/span> &lt;span class="n">root&lt;/span> &lt;span class="n">run&lt;/span> &lt;span class="n">sbin&lt;/span> &lt;span class="n">srv&lt;/span> &lt;span class="n">sys&lt;/span> &lt;span class="n">tmp&lt;/span> &lt;span class="n">usr&lt;/span> &lt;span class="k">var&lt;/span> &lt;span class="n">webroot&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;code>flag_c603222fc7a23ee4ae2d59c8eb2ba84d&lt;/code> 一副 flag 樣&lt;br>
+所以我們一樣編碼並反轉 &lt;code>cat ../flag_c603222fc7a23ee4ae2d59c8eb2ba84d&lt;/code> 得到 &lt;code>=QGN4EmYyIWZ4MWO1QmMlFGNlV2MyE2NjZmMyIzMwYzYfdWYsZ2Lu4CI0F2Y&lt;/code> 放入 query string，拿到 flag。&lt;/p>
+&lt;p>Flag: &lt;code>AIS3{0h!Why_do_U_kn0w_this_sh3ll1!1l!}&lt;/code>&lt;/p>
+&lt;h2 id="microchip">Microchip
+&lt;/h2>&lt;p>觀察 code 然後反做一遍，把字串中每四個字元分成一組後每組都 reverse，接著再把四組 key 找出來，寫個小程式反解回去就行惹。&lt;/p>
+&lt;p>Flag: &lt;code>AIS3{w31c0me_t0_AIS3_cryptoO0O0o0Ooo0}&lt;/code>&lt;/p>
+&lt;h2 id="piano">Piano
+&lt;/h2>&lt;blockquote>
+&lt;p>解出來但是 Flag 沒上傳到啊啊啊，因為彈窗的字沒辦法複製，比賽剩下 30 秒，然後就差一題進前 75 名，殘念 QwQ&lt;/p>
+&lt;/blockquote>
+&lt;p>先觀察一下程式檔案，發現是用 .NET 開發的！廢話不多說，直接把 dll 丟進 Rider 反編譯，程式碼輕鬆出來 OuO&lt;/p>
+&lt;p>Piano.cs 是程式的主要蘿莉&amp;hellip;(等等我怎打蘿莉) 邏輯部分，先觀察一下 Piano constructor，知道了按鍵有 14 個，然後照音名順序排列，接著繼續觀察程式碼，看到有一組 nya function，反正跟貓貓有關的絕對是答案！&lt;/p>
+&lt;p>所以查了 usage 在 79 行，77 行有個判斷式 &lt;code>isValid&lt;/code>，所以得想把法讓 &lt;code>isValid == true&lt;/code>，我們才能呼叫貓貓 function。&lt;/p>
+&lt;p>接著開始觀察 isValid function，發現有四組 list，同樣的 list 各有兩組，但實際上看 &lt;code>intList2&lt;/code> / &lt;code>intList4&lt;/code> 這兩組就行了，因為最下面的判斷式只看這兩組，觀察一下判斷式，想把法把數字湊出來滿足條件即可:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">7, 7, 10, 10, 11, 11, 10, 9, 9, 3, 3, 8, 8, 7, 7
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>我們知道按鍵是照音名順序排列的，所以就在鋼琴按鍵上面依照對應的按鍵彈即可拿到 Flag。&lt;/p>
+&lt;p>Flag: &lt;code>AIS3{7wink1e_tw1nkl3_l1ttl3_574r_1n_C_5h4rp}&lt;/code>&lt;/p>
+&lt;hr>
+&lt;p>喔不，窩是個 DD，因為阿夸也好可愛 (●°u°●)​ 」&lt;/p>
+&lt;p>&lt;img src="https://blog.yuna0x0.com/p/2021-05-25-ais3-2021-writeup/cute-aqua.png"
+width="400"
+height="413"
+srcset="https://blog.yuna0x0.com/p/2021-05-25-ais3-2021-writeup/cute-aqua_hu18211949278454533429.png 480w, https://blog.yuna0x0.com/p/2021-05-25-ais3-2021-writeup/cute-aqua_hu1536872540241685697.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="96"
+data-flex-basis="232px"
+>&lt;/p></description></item></channel></rss>
